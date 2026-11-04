@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaee">
+  <meta name="description" content="Conoce el Aceite Corporal Nutritivo de Pure Glow Cosmetics, formulado con aceites de almendra y jojoba y vitamina E.">
+  <title>Aceite Corporal Nutritivo | Pure Glow Cosmetics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rojo: #9c4b4a;
+      --verde: #7d9e85;
+      --crema: #fffaee;
+      --dorado: #e2bc79;
+      --texto: #294333;
+      --texto-suave: #58665a;
+      --blanco: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--crema); color: var(--texto); font-family: 'Montserrat', Arial, sans-serif; line-height: 1.65; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .container { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+    .header { background: var(--blanco); border-bottom: 1px solid #eae8dd; }
+    .header-inner { min-height: 94px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    .brand img { width: 205px; height: auto; }
+    .nav { display: flex; gap: 30px; font-size: 13px; font-weight: 700; }
+    .nav a { text-decoration: none; transition: color .2s; }
+    .nav a:hover, .nav a:focus-visible { color: var(--rojo); }
+    .hero { padding: 66px 0 80px; }
+    .hero-grid { display: grid; grid-template-columns: .88fr 1.12fr; align-items: center; gap: 60px; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .19em; font-size: 12px; font-weight: 800; color: var(--rojo); }
+    h1 { margin: 15px 0 20px; font-size: clamp(38px, 5vw, 68px); line-height: 1.09; letter-spacing: -.055em; }
+    h1 span { color: var(--rojo); }
+    .hero p { color: var(--texto-suave); font-size: 16px; max-width: 440px; }
+    .button { display: inline-flex; margin-top: 24px; padding: 14px 25px; border-radius: 50px; background: var(--rojo); color: white; text-decoration: none; font-weight: 700; font-size: 13px; transition: transform .2s, background .2s; }
+    .button:hover { background: #803b3b; transform: translateY(-2px); }
+    .hero-photo { background: #fff; padding: 13px; border-radius: 25px; box-shadow: 0 16px 50px #40382912; overflow: hidden; }
+    .hero-photo img { width: 100%; height: auto; border-radius: 15px; }
+    .pill { display: inline-block; background: #e7eee6; color: #406b4b; border-radius: 50px; padding: 7px 13px; font-size: 11px; font-weight: 800; margin-bottom: 13px; }
+    .section { padding: 75px 0; }
+    .section-title { font-size: clamp(27px, 3.5vw, 40px); line-height: 1.2; letter-spacing: -.035em; margin: 12px 0 15px; }
+    .section-lead { color: var(--texto-suave); max-width: 650px; margin: 0 auto; }
+    .center { text-align: center; }
+    .benefits { background: #fff; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 37px; }
+    .card { padding: 29px 25px; border: 1px solid #e6eadd; border-radius: 20px; background: #fcfbf7; }
+    .card-icon { display: grid; place-items: center; height: 48px; width: 48px; border-radius: 50%; background: #ebeee5; color: #557a61; font-size: 24px; margin-bottom: 19px; }
+    .card h3 { font-size: 16px; margin: 0 0 9px; }
+    .card p { font-size: 13px; margin: 0; color: var(--texto-suave); }
+    .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 42px; align-items: start; }
+    .detail { border-left: 3px solid var(--dorado); padding: 2px 0 2px 19px; margin-top: 24px; }
+    .detail h3 { margin: 0 0 7px; font-size: 15px; }
+    .detail p { margin: 0; color: var(--texto-suave); font-size: 14px; }
+    .materials { background: #e8eee6; border-radius: 23px; padding: 34px; }
+    .materials h2 { margin: 0 0 17px; font-size: 24px; }
+    .material { padding: 16px 0; border-top: 1px solid #cbd9cb; }
+    .material strong { display: block; font-size: 14px; margin-bottom: 2px; }
+    .material span { font-size: 13px; color: var(--texto-suave); }
+    .note { margin-top: 20px; font-size: 12px; color: var(--texto-suave); }
+    .footer { background: var(--rojo); padding: 31px 0; color: #fff; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer strong { font-size: 16px; }
+    .footer small { font-size: 11px; opacity: .87; }
+    @media (max-width: 780px) {
+      .hero-grid, .details-grid { grid-template-columns: 1fr; gap: 32px; }
+      .hero { padding: 42px 0 55px; }
+      .hero-photo { max-width: 650px; }
+      .cards { grid-template-columns: 1fr; }
+      .section { padding: 55px 0; }
+      .header-inner { min-height: 80px; }
+      .brand img { width: 160px; }
+      .nav { gap: 15px; font-size: 11px; }
+    }
+    @media (max-width: 450px) {
+      .container { width: min(100% - 32px, 1120px); }
+      .header-inner { align-items: flex-start; flex-direction: column; gap: 8px; padding: 15px 0; }
+      .brand img { width: 168px; }
+      .nav { gap: 22px; }
+      .hero { padding-top: 35px; }
+      h1 { font-size: 40px; }
+      .hero p { font-size: 14px; }
+      .hero-photo { padding: 7px; border-radius: 14px; }
+      .card, .materials { padding: 24px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 5px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Pure Glow Cosmetics, inicio"><img src="assets/logo.png" alt="Pure Glow Cosmetics" width="1094" height="421"></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#producto">El producto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">Cuidado corporal</span>
+          <div class="eyebrow">Pure Glow Cosmetics</div>
+          <h1 id="hero-title">Tu piel merece un <span>brillo natural.</span></h1>
+          <p>Conoce nuestro <strong>Aceite Corporal Nutritivo</strong>, con aceites de almendra y jojoba + vitamina E. Una propuesta de cuidado corporal para hidratar y suavizar tu piel.</p>
+          <a class="button" href="#producto">Conoce el producto</a>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/mockup.png" alt="Vista frontal y posterior del Aceite Corporal Nutritivo Pure Glow en envases de vidrio ámbar con dispensador" width="1448" height="1086" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits" id="beneficios" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="center">
+          <div class="eyebrow">Lo esencial</div>
+          <h2 class="section-title" id="benefits-title">Cuidado sencillo, inspiración natural</h2>
+          <p class="section-lead">Una fórmula pensada para acompañar tu rutina de cuidado personal.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">✦</div>
+            <h3>Hidratación y suavidad</h3>
+            <p>Ayuda a mantener la piel suave, tersa y con una apariencia luminosa.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">❀</div>
+            <h3>Ingredientes destacados</h3>
+            <p>Con aceites de almendra y jojoba, complementados con vitamina E.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">♻</div>
+            <h3>Presentación consciente</h3>
+            <p>Diseño con botella de vidrio ámbar reciclable y etiqueta resistente al uso diario.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="producto" aria-labelledby="product-title">
+      <div class="container details-grid">
+        <div>
+          <div class="eyebrow">Conoce tu aceite</div>
+          <h2 class="section-title" id="product-title">Aceite Corporal Nutritivo</h2>
+          <p style="color:var(--texto-suave);font-size:14px">Contenido neto: <strong>100 ml</strong></p>
+          <div class="detail">
+            <h3>¿Cómo usarlo?</h3>
+            <p>Aplica sobre la piel limpia y seca. Masajea suavemente hasta su completa absorción.</p>
+          </div>
+          <div class="detail">
+            <h3>Ingredientes destacados</h3>
+            <p>Aceite de almendra, aceite de jojoba y vitamina E.</p>
+          </div>
+          <div class="detail">
+            <h3>Precauciones</h3>
+            <p>Solo para uso externo. Evita el contacto con los ojos. Contiene aceite de almendra: suspende su uso ante cualquier reacción alérgica.</p>
+          </div>
+        </div>
+        <aside class="materials" aria-label="Materiales de la presentación">
+          <h2>Diseño que cuida los detalles</h2>
+          <div class="material"><strong>Envase</strong><span>Botella de vidrio ámbar reciclable de 100 ml, con dispensador.</span></div>
+          <div class="material"><strong>Etiqueta</strong><span>BOPP blanco mate adhesivo, resistente a humedad y aceites.</span></div>
+          <div class="material"><strong>Formato</strong><span>Dos etiquetas independientes: frontal y posterior de 5 × 8 cm cada una.</span></div>
+          <p class="note">Los materiales y el diseño corresponden a una propuesta académica de empaque. La composición y las declaraciones del producto deben validarse antes de su comercialización.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <strong>Pure Glow Cosmetics</strong>
+      <small>Una forma natural de cuidar tu piel · Proyecto de diseño</small>
+    </div>
+  </footer>
+</body>
+</html>
